@@ -54,7 +54,6 @@ public class Cercle {
                     Cercle verre = c.get(a - 1);
                     c.set(a - 1, c.get(a));
                     c.set(a, verre);
-
                 }
             }
         }
@@ -68,7 +67,6 @@ public class Cercle {
                     Cercle verre = c.get(a - 1);
                     c.set(a - 1, c.get(a));
                     c.set(a, verre);
-
                 }
             }
         }
