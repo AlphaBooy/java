@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class TD05Exo1 {
 
@@ -48,5 +49,8 @@ public class TD05Exo1 {
 
     public static void main(String[] args) throws IOException {
         lectureFichierCaractere(Path.of("C:\\test.txt"));
+        if (!Files.isDirectory(Paths.get(System.getProperty("user.dir"),"data"))) {
+            Files.createDirectory(Paths.get(System.getProperty("user.dir"),"data"));
+        }
     }
 }
